@@ -1,4 +1,9 @@
 [core]
     remote = localstack-s3
-['remote "localstack-s3"']
-    url = s3://
+
+[remote "localstack-s3"]
+    url = s3://raw
+    endpoint_url = http://localhost:4566
+    access_key_id = test
+    secret_access_key = test
+    use_ssl = false
