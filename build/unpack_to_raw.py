@@ -37,7 +37,7 @@ def unpack_data(input_dir, bucket_name, output_file_name):
         print("All files combined successfully.")
 
         # Save the combined data to a CSV file
-        combined_csv_path = f"/tmp/{output_file_name}"  # Save locally before uploading
+        combined_csv_path = f"tmp/{output_file_name}"  # Save locally before uploading
         combined_data.to_csv(combined_csv_path, index=False)
         print(f"Combined file saved locally at {combined_csv_path}.")
 
